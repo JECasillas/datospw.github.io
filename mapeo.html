@@ -81,7 +81,7 @@ function codeAddress(address, mark, map) {
 								passData(loc[0], loc[1], mark, map);
 							} else {
             							if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT){
-                							setTimeout(function() { codeAddress(address, mark, map); }, (timeout * 3));
+                							setTimeout(function() { codeAddress(address, mark, map); }, (timeout));
             							}
         						}
 							
